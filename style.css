@@ -1,26 +1,65 @@
+/* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;  /* Modern sans-serif font */
+    background-color: #f0f4f7;  /* Light background for contrast */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styling with Logo */
 header {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #007bff, #00c6ff);  /* Gradient background for modern effect */
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    width: 150px;  /* Adjust logo size */
+    height: auto;
+    border-radius: 10%;  /* Rounded corners for the logo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  /* Drop shadow for depth */
 }
 
 .animated-title {
-    font-size: 2.5em;
-    animation: fadeIn 2s ease-in-out;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;  /* Modern spacing */
+    animation: fadeInDown 2s ease-in-out;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+/* Keyframes for Header Animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* 3D Background Section with Advanced Styling */
 .three-d-background {
-    background: url('3d-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(to right, #001510, #00c6ff);  /* Dynamic gradient background */
+    padding: 50px;
+    text-align: center;
     color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);  /* Deeper shadow for depth */
+    margin: 40px 0;
 }
 
 .three-d-background img {
@@ -28,24 +67,108 @@ header {
     height: 200px;
     border-radius: 50%;
     border: 5px solid white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);  /* Stronger shadow */
+    transition: transform 0.3s ease;  /* Smooth hover effect */
+}
+
+.three-d-background img:hover {
+    transform: scale(1.1);  /* Enlarge slightly on hover */
+}
+
+.three-d-background p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Course Listing Styling */
+.container h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #0056b3;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .list-group-item {
+    background-color: #fff;  /* White background for contrast */
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 10px;
     font-size: 1.1em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    transition: transform 0.3s ease;
 }
 
+.list-group-item:hover {
+    transform: translateY(-5px);  /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+/* Registration Form Styling */
 .registration-form {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #f7f9fb;  /* Soft light background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+    margin-top: 40px;
 }
 
+.registration-form h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-control {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);  /* Blue glow on focus */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Footer Styling */
 footer {
     background-color: #343a40;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* Top shadow */
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
 }
