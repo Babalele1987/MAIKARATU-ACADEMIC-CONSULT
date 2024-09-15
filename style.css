@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+.animated-title {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.three-d-background {
+    background: url('3d-background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.three-d-background img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.list-group-item {
+    font-size: 1.1em;
+}
+
+.registration-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
